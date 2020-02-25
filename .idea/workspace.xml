@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a8b1deb-466a-4250-ba6d-a7e48f50ae5d" name="Default Changelist" comment="" />
+    <list default="true" id="6a8b1deb-466a-4250-ba6d-a7e48f50ae5d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/test_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/test_02.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/information/test.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/information/test.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_result/report/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_result/report/api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_result/test_logs/bcex_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_result/test_logs/bcex_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_tools/do_mysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_tools/do_mysql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_tools/read_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_tools/read_excel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_tools/reflect.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_tools/reflect.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,17 +29,25 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XkAjsLm3Kw6NxylPrQ0qE9O8RG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="D:/Python/Python38/Lib/site-packages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -46,7 +66,7 @@
       <recent name="D:\koko\APX\test_data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_run">
+  <component name="RunManager" selected="Python tests.Unittests in test_01.py">
     <configuration name="re" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="APX" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -68,7 +88,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="requests_9" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="APX" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -76,11 +96,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/steadily" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\koko\APX\steadily\requests_9.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/test_01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -110,20 +130,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for steadily.requests_9" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="APX" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/steadily" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;steadily.requests_9&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests in requests_9.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="APX" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,13 +144,27 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_01.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="APX" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/test_01.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_01.py" />
+        <item itemvalue="Python.test_01" />
         <item itemvalue="Python.test_run" />
         <item itemvalue="Python.re" />
         <item itemvalue="Python tests.Unittests in requests_9.py" />
-        <item itemvalue="Python tests.Unittests for steadily.requests_9" />
-        <item itemvalue="Python.requests_9" />
       </list>
     </recent_temporary>
   </component>
@@ -190,6 +210,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#Inspections" timestamp="1581945991446">
       <screen x="0" y="0" width="1280" height="680" />
@@ -212,26 +235,26 @@
     </state>
     <state x="632" y="-933" key="FileChooserDialogImpl/0.0.1280.680/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1581754110824" />
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1582078474932" />
-    <state width="1259" height="275" key="GridCell.Tab.0.bottom" timestamp="1582544783298">
+    <state width="1259" height="205" key="GridCell.Tab.0.bottom" timestamp="1582630717781">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="258" key="GridCell.Tab.0.bottom/0.0.1280.680/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1582531088242" />
-    <state width="1259" height="275" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582544783298" />
-    <state width="1259" height="275" key="GridCell.Tab.0.center" timestamp="1582544783298">
+    <state width="1259" height="205" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582630717781" />
+    <state width="1259" height="205" key="GridCell.Tab.0.center" timestamp="1582630717781">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="258" key="GridCell.Tab.0.center/0.0.1280.680/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1582531088242" />
-    <state width="1259" height="275" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582544783298" />
-    <state width="1259" height="275" key="GridCell.Tab.0.left" timestamp="1582544783298">
+    <state width="1259" height="205" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582630717781" />
+    <state width="1259" height="205" key="GridCell.Tab.0.left" timestamp="1582630717780">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="258" key="GridCell.Tab.0.left/0.0.1280.680/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1582531088242" />
-    <state width="1259" height="275" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582544783298" />
-    <state width="1259" height="275" key="GridCell.Tab.0.right" timestamp="1582544783298">
+    <state width="1259" height="205" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582630717780" />
+    <state width="1259" height="205" key="GridCell.Tab.0.right" timestamp="1582630717781">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1899" height="258" key="GridCell.Tab.0.right/0.0.1280.680/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1582531088242" />
-    <state width="1259" height="275" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582544783298" />
+    <state width="1259" height="205" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582630717781" />
     <state width="1259" height="275" key="GridCell.Tab.1.bottom" timestamp="1582544783298">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -273,11 +296,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test_case/test_01.py</url>
-          <line>1</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/steadily/requests_6.py</url>
           <line>2</line>

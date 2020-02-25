@@ -1,6 +1,6 @@
 import pandas as pd
 from test_tools.gain_path import *
-from test_tools.read_config import ReadConfig
+
 
 
 class Method:

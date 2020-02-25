@@ -8,7 +8,7 @@ import test_data.HTMLTestRunnerNew as HTMLTestRunner
 import unittest
 
 from test_tools.gain_path import *
-from steadily.requests_9 import TestCase
+from test_case.test_01 import TestCase
 
 # 创建测试套件实例
 suite = unittest.TestSuite()

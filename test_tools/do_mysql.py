@@ -1,8 +1,7 @@
 __author__ = 'Bomz'
 import pymysql
 from sshtunnel import SSHTunnelForwarder
-from test_tools.gain_path import *
-from test_tools.read_config import ReadConfig
+
 
 
 class SshMySQl(object):

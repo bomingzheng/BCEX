@@ -1,8 +1,11 @@
+# 正则表达式处理excel
+
+
 from openpyxl import load_workbook
 from test_tools.read_config import ReadConfig   # 导入读取配置文件的类
 from test_tools.gain_path import *      # 导入配置路径的文件
-import pandas as pd         # 导入parser处理excel数据
 from test_tools.reflect import Method
+from test_tools.re import DoRegx
 
 
 class DoExcel:  # 处理excel的类
@@ -24,7 +27,8 @@ class DoExcel:  # 处理excel的类
                     data['title'] = sheet.cell(i, 3).value
                     data['url'] = sheet.cell(i, 4).value
                     if sheet.cell(i, 5).value.find("${amount}") != -1:  # 从该行查找子字符串，-1是找到就替换
-                        data['data'] = sheet.cell(i, 5).value.replace("${amount}", str(amount))
+                        data['data'] = DoRegx.do_re(sheet.cell(i, 5).value)
+                        # data['data'] = sheet.cell(i, 5).value.replace("${amount}", str(amount))
                         # setattr(Method, 'amount', getattr(Method, 'amount') + 1) 适合于注册，每个手机号+1，此处暂时不用
                     else:
                         data['data'] = sheet.cell(i, 5).value
@@ -46,21 +50,21 @@ class DoExcel:  # 处理excel的类
                     data['title'] = sheet.cell(case_id+1, 3).value
                     data['url'] = sheet.cell(case_id+1, 4).value
                     if sheet.cell(case_id+1, 5).value.find("${amount}") != -1:  # 从该行查找子字符串，有找到
-                        data['data'] = sheet.cell(case_id+1, 5).value.replace("${amount}", str(amount))
+                        data['data'] = DoRegx.do_re(sheet.cell(case_id+1, 5).value)
+                        # data['data'] = sheet.cell(case_id+1, 5).value.replace("${amount}", str(amount))
                         # setattr(Method, 'amount', getattr(Method, 'amount') + 1) 适合于注册，每个手机号+1，此处暂时不用
                     else:
                         data['data'] = sheet.cell(case_id+1, 5).value
                         # 如果是注册，此处可以添加一个写会的范围，根据总行数减去不成功用例
                         # 例如：sheet.max_row - 2
-                    cls.updata_price(amount, file_name, 'init')
                     data['headers'] = sheet.cell(case_id+1, 6).value
                     data['method'] = sheet.cell(case_id+1, 7).value
                     data['expected_result'] = sheet.cell(case_id+1, 8).value
-                    if sheet.cell(case_id+1, 9).value !=None:
-                        data['check_sql'] = sheet.cell(case_id+1, 9).value
+                    data['check_sql'] = sheet.cell(case_id+1, 9).value
                     data['result'] = sheet.cell(case_id+1, 10).value
                     data['sheet_name'] = key
                     excel_data.append(data)
+                    cls.updata_price(amount, file_name, 'init')
 
         return excel_data   # 返回列表数据
 
