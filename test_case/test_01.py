@@ -14,11 +14,9 @@ date = DoExcel.get_excel(test_excel_path)   # 调用读取excel数据的方
 
 @ddt
 class TestCase(unittest.TestCase):
-
     @data(*date)
     def test_01(self, i):
         if i['data'].find("${order_nos}") != -1:   # 在data找到这个标签就替换
-
             if getattr(Method, 'order_nos') == None:  # 判断反射属性是空值，如果为空查询数据库并赋值
                 que_sql = "SELECT order_no FROM `order` WHERE user_id=6865 ORDER BY id DESC LIMIT 1"
                 order_nos = SshMySQl().do_mysql(que_sql)[0][0]
@@ -37,7 +35,7 @@ class TestCase(unittest.TestCase):
             # 请求之后锁定资产
             after_amount = SshMySQl().do_mysql(que_sql)[0][0]
             my_log.info('用例{}的查询下单之后的锁定资产{}'.format(i['case_id'], after_amount))
-            # 检查锁定资产是否正确
+            # # 检查锁定资产是否正确
             if (int(eval(after_amount)))-(int(eval(before_amount))) == int(eval(i['date'])['amount']):
                 my_log.info('数据库校验通过')
                 check_res = '锁定金额正确'

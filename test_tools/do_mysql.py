@@ -8,9 +8,11 @@ class SshMySQl(object):
 
     def do_mysql(self, sql, select='all'):
         with SSHTunnelForwarder(('52.79.247.255', int(22)),
-                                ssh_pkey=r'C:\Users\bomin\Desktop\data\工作数据\api\bcex_data_ssh',
+                                ssh_pkey='C:\\Users\\bomin\\Desktop\\data\\数据库\\id_rsa_2048',
+                                ssh_password="Uxin9527&",
                                 ssh_username='bcex_mysql',
-                                remote_bind_address=('bcex-release.cnhbjn4dkymy.ap-northeast-2.rds.amazonaws.com', int(3306))) as server:
+                                remote_bind_address=('bcex-release.cnhbjn4dkymy.ap-northeast-2.rds.amazonaws.com',
+                                                     int(3306))) as server:
             conn = pymysql.connect(host='127.0.0.1',
                                    port=server.local_bind_port,
                                    user='bomingzheng',
@@ -33,5 +35,5 @@ class SshMySQl(object):
 
 
 if __name__ == "__main__":
-    connect = SshMySQl().do_mysql('select balance from asset_user_sum_locked WHERE account_id=2910995')
+    connect = SshMySQl().do_mysql('SELECT order_no FROM `order` WHERE user_id=6865 ORDER BY id DESC LIMIT 1')
     print(int(connect[0][0]))

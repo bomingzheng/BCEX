@@ -1,4 +1,3 @@
-__author__ = 'Bomz'
 import os
 
 # 设置文件路径的可配置

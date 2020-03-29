@@ -5,7 +5,7 @@ from openpyxl import load_workbook
 from test_tools.read_config import ReadConfig   # 导入读取配置文件的类
 from test_tools.gain_path import *      # 导入配置路径的文件
 from test_tools.reflect import Method
-from test_tools.re import DoRegx
+from test_tools.regular import DoRegx
 
 
 class DoExcel:  # 处理excel的类
